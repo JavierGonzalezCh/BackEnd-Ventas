@@ -1,0 +1,91 @@
+###
+POST http://localhost:9000/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Producto 3",
+    "value": 3000,
+    "status": "Disponible"
+}
+
+###
+GET http://localhost:9000/api/products  HTTP/1.1
+
+###
+GET http://localhost:9000/api/products/6237a82aef2b895efcc4c7c2  HTTP/1.1
+
+###
+PUT http://localhost:9000/api/products/6237a82aef2b895efcc4c7c2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Producto 3",
+    "value": 3000,
+    "status": "Disponible"
+}
+
+###
+DELETE http://localhost:9000/api/products/6237a82aef2b895efcc4c7c2  HTTP/1.1
+
+
+
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Usuario 2",
+    "role": "Vendedor",
+    "status": "No autorizado"
+}
+
+###
+GET http://localhost:9000/api/users  HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/6237a82aef2b895efcc4c7c2  HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/6237cfafc04165ceae6a3916 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Usuario 4",
+    "role": "Vendedor",
+    "status": "No autorizado"
+}
+
+###
+DELETE http://localhost:9000/api/users/6237d12c047182d274064485  HTTP/1.1
+
+
+###
+POST http://localhost:9000/api/sales HTTP/1.1
+Content-Type: application/json
+
+{
+    "total": 20000,
+    "date": "2001,11,1",
+    "client": "Cliente 2",
+    "idClient": "22222"
+}
+
+###
+GET http://localhost:9000/api/sales  HTTP/1.1
+
+###
+GET http://localhost:9000/api/sales/6237a82aef2b895efcc4c7c2  HTTP/1.1
+
+###
+PUT http://localhost:9000/api/sales/6237d2791e1b40f09cac927c HTTP/1.1
+Content-Type: application/json
+
+{
+    "total": 10000,
+    "date": "2022,03,20",
+    "client": "Cliente 1",
+    "idClient": "111111111"
+}
+
+###
+DELETE http://localhost:9000/api/sales/6237d12c047182d274064485  HTTP/1.1
